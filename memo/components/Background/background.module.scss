@@ -1,0 +1,10 @@
+.background {
+    margin-left: -1px;
+    width: 100,1%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/Images/Fade-In-Background.svg") center no-repeat;
+    background-size: cover;
+}

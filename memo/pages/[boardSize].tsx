@@ -1,10 +1,10 @@
 import Head from "next/head"
 import { useRouter } from "next/router"
 
-import Background from "../../components/Background/Background"
-import GamePage from "../../components/GamePage/GamePage"
+import Background from "../components/Background/Background"
+import GamePage from "../components/GamePage/GamePage"
 
-const gameSite = () => {
+export default function GameSite(){
     const router = useRouter()
     const { boardSize } = router.query
     const gridSize = Number(boardSize)
@@ -20,5 +20,3 @@ const gameSite = () => {
     </>
   )
 }
-
-export default gameSite

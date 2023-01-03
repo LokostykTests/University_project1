@@ -24,7 +24,7 @@ export default function Home() {
                 <option>4</option>
                 <option>6</option>
             </select>
-            <LinkButton href={`gameSite/${boardSize}`}>
+            <LinkButton href={String(boardSize)}>
                 Start
             </LinkButton>
         </div>

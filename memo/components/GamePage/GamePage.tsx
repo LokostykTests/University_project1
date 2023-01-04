@@ -77,7 +77,7 @@ export default function GamePage({ gridSize = 0 }: Props) {
 
   const handleCardClick = (e: React.MouseEvent<HTMLDivElement>, cardId: number) => {
     const currentElement = e.currentTarget
-    const oneCardChosen = !!chosenCard.classList
+    const twoCardChosen = !!chosenCard.classList
     const cardsAreIdentical = chosenCard.cardId === cardId
 
     if(currentElement.classList.contains(cardStyles.active) || cardsFlip) return
@@ -86,7 +86,7 @@ export default function GamePage({ gridSize = 0 }: Props) {
     currentElement.classList.add(cardStyles.active)
 
 
-    if(oneCardChosen) {
+    if(twoCardChosen) {
       setCardsFlip(true)
       
       if(cardsAreIdentical) {

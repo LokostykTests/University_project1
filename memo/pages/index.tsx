@@ -7,7 +7,8 @@ export default function Main() {
       <Head>
         <title>Memo</title>
         <link rel="icon" href="/Icons/logo.svg" />
-        <link rel="prefetch" href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500;600&display=swap" />
+        <link rel="prefetch" href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500;600&display=swap" as='font'/>
+        <link rel="prefetch" href="/Icons/logo.svg" as='image'/>
       </Head>
       <main>
         <Home />

@@ -1,6 +1,11 @@
 .board {
     display: grid;
     justify-content: center;
+
+    @media screen and (max-width: 580px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .topBar {
